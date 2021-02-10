@@ -105,6 +105,39 @@ const data = [
     thirdParagraph: `Quisque porttitor ullamcorper ante. Ut dictum vestibulum mauris, ornare condimentum lectus auctor sed. Quisque sit amet 
           molestie metus. Etiam vitae condimentum dui, a accumsan ligula. In ultrices in ante ac condimentum. Donec hendrerit sem ac nunc 
           consequat, non efficitur nunc commodo. Cras nec ipsum scelerisque mi eleifend pretium vel at enim.`
+  },
+  {
+    title: 'Useful Applications for JS Event Handlers',
+    date: 'Feb 10th, 2021',
+    firstParagraph: `Sed porta diam justo, eu tincidunt orci rhoncus at. Donec ut augue pretium, varius est vitae, iaculis magna. Etiam ac enim at 
+          nisi vehicula suscipit ut quis magna. Morbi quis luctus erat. Etiam mollis massa nunc, ut mollis dolor mollis ut. Donec pulvinar tristique 
+          nibh, quis accumsan ante varius nec. Fusce fermentum finibus hendrerit. Integer mi ante, sagittis a purus a, interdum tempor velit.`,
+    
+    secondParagraph: `Phasellus malesuada quam et elit tristique faucibus. Aenean at enim imperdiet, convallis urna vel, maximus elit. Quisque tincidunt, 
+          urna quis porta rutrum, ipsum lectus elementum diam, eu suscipit nisl velit eget erat. Cras sed luctus tellus. Curabitur hendrerit enim sed nisi 
+          rutrum, sit amet placerat orci sagittis. Ut ullamcorper pellentesque nibh non tempor. Duis viverra magna et tempus commodo. Phasellus magna justo, 
+          varius ac velit a, malesuada tincidunt ante. Aliquam erat volutpat. In pharetra libero nisl, nec cursus eros finibus eu.`,
+    
+    thirdParagraph: `Vivamus ornare leo eu lorem bibendum luctus. Nulla sit amet lorem sem. Suspendisse dignissim pharetra nibh, eu pellentesque mi 
+          eleifend vitae. Vestibulum eu est arcu. Curabitur imperdiet, leo eget lacinia maximus, nunc leo eleifend leo, eu volutpat ligula urna sed nunc. 
+          Etiam pretium porttitor ex ac luctus. Donec maximus porttitor sapien a finibus. Phasellus ultricies accumsan nulla et pellentesque.`
+  },
+  {
+    title: 'Understanding the DOM and Event Propagation',
+    date: 'Feb 10th, 2021',
+    firstParagraph: `Nam sit amet metus tempus, porta metus vehicula, commodo dui. Suspendisse potenti. Phasellus vestibulum libero sed eros eleifend, 
+          in semper quam euismod. Sed tempus, mauris vitae gravida dictum, leo tellus iaculis mi, nec pharetra turpis arcu sit amet magna. Morbi nec 
+          hendrerit urna. Praesent semper tortor erat, id ultricies libero congue in. Curabitur dictum consequat dictum. Sed feugiat enim nisl, quis 
+          imperdiet enim pellentesque at. Maecenas semper lorem elit, nec suscipit tellus mattis at.`,
+    
+    secondParagraph: `Ut dictum, nisl ut pulvinar blandit, massa ante lobortis velit, vitae euismod dolor lectus non enim. Orci varius natoque penatibus 
+          et magnis dis parturient montes, nascetur ridiculus mus. Sed a risus augue. Praesent id urna vel nunc tincidunt interdum. Vivamus commodo, 
+          lacus id fermentum rhoncus, odio quam tempus tellus, id hendrerit enim enim eget nisi. Cras vitae libero in ligula ornare ullamcorper quis vitae 
+          velit. Sed interdum libero nec nulla suscipit, id vulputate metus maximus. Sed molestie turpis quis lacus molestie bibendum.`,
+    
+    thirdParagraph: `Integer rhoncus eget ex vitae iaculis. Nam viverra hendrerit aliquet. Nunc lacinia sapien in mi semper volutpat et id dui. 
+          Sed turpis erat, elementum fermentum tempor nec, feugiat a urna. Cras sodales condimentum tristique. Etiam interdum eros ut erat 
+          ullamcorper placerat. Sed mattis justo ac nibh faucibus, eu maximus ligula molestie. Donec id urna eu est cursus semper sit amet a odio.`
   }
 ];
 
