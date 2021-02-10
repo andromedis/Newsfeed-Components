@@ -86,6 +86,25 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: 'Component Basics in Web Development',
+    date: 'Feb 10th, 2021',
+    firstParagraph: `Proin cursus, ex et cursus rhoncus, magna purus convallis erat, a varius massa nulla sit amet lorem. Nulla facilisi. 
+          Quisque quis libero vel enim tempus sagittis nec et felis. Integer eget vulputate leo. Nulla risus nunc, molestie et rutrum sit amet, 
+          eleifend ac mauris. Phasellus lectus neque, aliquet vel feugiat quis, vestibulum vel mi. Pellentesque eu justo accumsan, consequat neque 
+          quis, consectetur est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet imperdiet eros.`,
+    
+    secondParagraph: `Cras quis vestibulum nisl, vehicula euismod tellus. Nunc purus mauris, rhoncus a mi eu, suscipit dapibus ligula. 
+          Nunc eu posuere ex, viverra maximus velit. Nam ac ullamcorper eros. Quisque enim enim, mollis vel libero nec, hendrerit molestie mi. 
+          Phasellus fringilla nibh quis ipsum mattis, ut fringilla leo mollis. Proin gravida, ipsum non vehicula pharetra, eros dolor malesuada 
+          massa, quis placerat odio risus in lorem. Aenean quis enim finibus, dignissim velit in, tincidunt elit. Maecenas massa erat, viverra 
+          eget diam a, tempor tempus purus. Fusce fringilla pretium condimentum. In ut sagittis libero. Curabitur eu turpis urna. Vestibulum sed 
+          nisl vehicula, iaculis tellus vel, vehicula est.`,
+    
+    thirdParagraph: `Quisque porttitor ullamcorper ante. Ut dictum vestibulum mauris, ornare condimentum lectus auctor sed. Quisque sit amet 
+          molestie metus. Etiam vitae condimentum dui, a accumsan ligula. In ultrices in ante ac condimentum. Donec hendrerit sem ac nunc 
+          consequat, non efficitur nunc commodo. Cras nec ipsum scelerisque mi eleifend pretium vel at enim.`
   }
 ];
 
@@ -114,3 +133,45 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+function articleMaker(articleData) {
+  let newArticle = document.createElement('div');
+  newArticle.className = 'article';
+
+  let heading = document.createElement('h2');
+  heading.textContent = articleData['title'];
+  newArticle.appendChild(heading);
+
+  let date = document.createElement('p');
+  date.className = 'date';
+  date.textContent = articleData['date'];
+  newArticle.appendChild(date);
+
+  let paragraph = document.createElement('p');
+  paragraph.textContent = articleData['firstParagraph'];
+  newArticle.appendChild(paragraph);
+  paragraph = document.createElement('p');
+  paragraph.textContent = articleData['secondParagraph'];
+  newArticle.appendChild(paragraph);
+  paragraph = document.createElement('p');
+  paragraph.textContent = articleData['thirdParagraph'];
+  newArticle.appendChild(paragraph);
+
+  let expandButton = document.createElement('span');
+  expandButton.className = 'expandButton';
+  expandButton.textContent = '+';
+  newArticle.appendChild(expandButton);
+
+  expandButton.addEventListener('click', e => {
+    newArticle.classList.toggle('article-open');
+  })
+
+  return newArticle;
+}
+
+let divArticles = document.querySelector('div.articles');
+
+data.forEach(item => {
+  let newArticle = articleMaker(item);
+  divArticles.appendChild(newArticle);
+})
